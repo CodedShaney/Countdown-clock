@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url(https://source.unsplash.com/vZlTg_McCDo/1600x900);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 500px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.445);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
+  overflow: hidden;
+  display: inline-block;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 20px;
+}
+
+.center-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-header {
+  margin-left: 40px;
+}
+
+img {
+  cursor: pointer;
+}
+
+
+header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+.wrapper {
+  display: flex;
+  height: 500px;
+}
+
+section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.404);
+  display: inline-block;
+  width: 25%;
+  height: 400px;
+  box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.377);
+}
+
+h2 {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+#dateInput {
+  padding: 10px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 18px;
+}
+
+.time-left {
+  width: 65%;
+  height: 50%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.288);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.212);
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.226);
+  display: flex;
+  justify-content: space-between;
+}
+
+.days, .hours, .minutes, .seconds {
+  width: 25%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
