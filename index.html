@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown | Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="download.png">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="left-header">
+        <img src="hamburger.svg" alt="menu" onclick="sidebar()" style="width: 35px;">
+      </div>
+      <div class="center-header">Countdown clock</div>
+    </header>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Select Event Date</h2>
+        <input type="date" id="dateInput">
+      </div>
+      <section>
+        <div class="time-left">
+          <div class="days"><span class="days-count"> 204 </span> <span class="title">Days</span></div>
+          <div class="hours"><span class="hours-count"> 04 </span> <span class="title">Hours</span></div>
+          <div class="minutes"><span class="minutes-count"> 12 </span> <span class="title">Minutes</span></div>
+          <div class="seconds"><span class="seconds-count"> 30 </span> <span class="title">Seconds</span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
